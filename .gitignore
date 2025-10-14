@@ -1,0 +1,41 @@
+# Environment variables
+.env
+
+# Logs
+*.log
+app.log
+debug.log
+
+# Database files
+*.db
+rag_app.db
+chroma_db/
+processing_state.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+temp_*
+*.tmp
+
+# Analysis results
+analysis_results.txt
+hello.txt
+ngo.txt
