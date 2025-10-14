@@ -8,7 +8,7 @@ import uuid
 import logging
 import shutil
 from google_sheets_utils import save_chat_to_sheets
-import test
+# import test  # Commented out to avoid ollama import error on deployment
 
 # Set up logging
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
