@@ -26,7 +26,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # Set environment variables (if needed - load from .env during runtime)
-# ENV OPENAI_API_KEY=your_openai_api_key  # Not recommended to hardcode, use .env
+# Use OpenRouter API key - set in Render dashboard or .env file
+# ENV OPENROUTER_API_KEY=your_openrouter_api_key
 
 # Command to run the application
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -2,12 +2,17 @@ import streamlit as st
 from api_utils import upload_document, list_documents, delete_document
 
 def display_sidebar():
-    # Model selection
-    # model_options = ["gpt-4o", "gpt-4o-mini"]
-    # st.sidebar.selectbox("Select Model", options=model_options, key="model")
+    # Model selection - Using OpenRouter free models
+    model_options = [
+        "arcee-ai/trinity-large-preview:free",
+        "deepseek/deepseek-chat:free",
+        "google/gemma-2-9b-it:free",
+        "mistralai/mistral-7b-instruct:free"
+    ]
+    st.sidebar.selectbox("Select Model", options=model_options, key="model")
 
     if "model" not in st.session_state:
-        st.session_state.model = "gpt-4o"
+        st.session_state.model = "arcee-ai/trinity-large-preview:free"
 
     # Document upload
     # sidebar.py
