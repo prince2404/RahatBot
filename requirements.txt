@@ -1,10 +1,11 @@
-langchain
-langchain-openai
-langchain-core
-langchain_community
+langchain==0.1.20
+langchain-core==0.1.52
+langchain-openai==0.1.25
+langchain-community==0.0.38
+langchain-text-splitters==0.0.1
+langchain_chroma==0.1.2
 docx2txt
 pypdf
-langchain_chroma
 python-multipart
 fastapi
 uvicorn
